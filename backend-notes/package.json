@@ -9,7 +9,8 @@
     "build:ui": "rm -rf dist && cd ../frontend-notes/ && npm run build && cp -r dist ../backend-notes",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild",
     "lint": "eslint .",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand"
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "start:test": "NODE_ENV=test node index.js"
   },
   "author": "Sushant Bajracharya",
   "license": "ISC",
