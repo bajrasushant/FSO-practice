@@ -18,6 +18,7 @@ const typeDefs = `
     name: String!
     phone: String
     address: Address!
+    friendOf: [User!]!
     id: ID!
   }
 
@@ -49,5 +50,5 @@ const typeDefs = `
   type Subscription {
     personAdded: Person!
   }
-`
-module.exports = typeDefs
+`;
+module.exports = typeDefs;
